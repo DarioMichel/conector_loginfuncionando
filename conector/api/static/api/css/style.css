@@ -1,0 +1,73 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;  /* 1rem = 10 px */
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 6rem;    
+}
+
+.nombre_campaña {
+    font-weight: bold;
+}
+
+.header {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(4, 69, 155, 0.74);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(8, 6, 133, 0.74);
+    box-shadow: 0px 5px 15px 0px rgba(23, 41, 209, 0.74);
+    padding: 1.0em; 
+    border-radius: 1rem;
+    max-width: auto;
+}
+
+
+.contenido_principal{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.alineador {
+    text-align: center;
+}
+
+.grid {
+   align-items: center;
+}
+
+.fondocelda {
+    background-color: green;
+}
+
+.boton {
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5px;
+    text-align: center;
+}
