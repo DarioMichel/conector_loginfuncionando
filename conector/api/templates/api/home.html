@@ -19,7 +19,7 @@
 
     </header>
 
-    <main class="contenido_principal sombra alineador campaña ">
+    <main class="contenido_principal sombra alineador campaña">
         <div class="grid">
             <table class="tabla_Campañas">
                 <td>Campaña</td>
@@ -32,8 +32,11 @@
                         </tr>
                 {% endfor %}
             </table>   
+            <br>
+            <br>
+            <br>
             {% if user.is_authenticated %}
-                <a href="{% url 'login' %}">
+                <a href="{% url 'logout' %}">
                     <input type="submit" value="Cerrar Sesion">
                 </a>
             {% else %}

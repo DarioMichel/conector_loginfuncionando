@@ -25,3 +25,7 @@ class BeliveoCampaings(View):
 
     def post(self,request):
         pass
+    
+def welcome(request):
+
+    return render(request, 'api/welcome.html')
