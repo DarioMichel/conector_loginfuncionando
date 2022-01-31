@@ -17,6 +17,10 @@ h1 {
     font-size: 6rem;    
 }
 
+a {
+    text-decoration: none;
+}
+
 .nombre_campaña {
     font-weight: bold;
 }
@@ -25,11 +29,23 @@ h1 {
     max-width: 100%;
 }
 
+.img_login {
+    max-width: 40%;
+    max-height: 40%;
+}
+
 .contenedor {
     max-width: 25rem;
     margin: 0 auto;
 }
 
+.form_login {
+    text-align: center;
+}
+
+.contenedor_login {
+    max-width: 50%;
+}
 
 
 .sombra {
@@ -51,6 +67,14 @@ h1 {
 
 .alineador {
     text-align: center;
+}
+
+.alineador_derecha {
+    text-align: right; 
+    font-family: sans-serif;
+    padding-right: 110px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .grid {
