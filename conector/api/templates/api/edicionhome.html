@@ -5,27 +5,41 @@
 
 {%block body%}
 
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>    
+{% endif %}
+
+
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <div class="card">
             <h2>ChangeStatus</h2>
             <div class="card-body">
-                <form action="/editarstatus/" method="POST"> {% csrf_token %}
+                <form id="formularioActualizar"  action="/editarstatus/" method="POST"> {% csrf_token %}
                     <div class="form-group">
                         <input type="text" id="nombre_campaña" name="nombre_campaña" value="{{nombres.nombre}}" class="form-control" readonly>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="scampaña" name="scampaña" value="{{nombres.statuscampaña}}" class="form-control">
+                       <select name="scampaña" id="scampaña">
+                           <option value=""></option>
+                           <option value=True>True</option>
+                           <option value=False>False</option>
+                       </select> 
+                        <!-- <input type="text" id="scampaña" name="scampaña" value="{{nombres.statuscampaña}}" class="form-control">  -->
                     </div>
+                    <br>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-large text-white"> Guardar </button>
+                        <button type="submit" class="btn btn-success btn-large text-white pading"> Guardar </button>
                     </div>
                 </form>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
-
 
 
 {%endblock%}

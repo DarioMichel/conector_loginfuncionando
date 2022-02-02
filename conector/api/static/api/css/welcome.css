@@ -1,0 +1,67 @@
+body {
+    background: url(../img/background.jpg) no-repeat center center fixed ;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 6rem;    
+    color: rgb(70, 59, 226);
+}
+
+
+.contenedor {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.alineador {
+    text-align: center;
+}
+
+.header {
+    
+    max-width: 100%;
+    padding-bottom: 20px;
+    opacity: 85%;
+}
+
+
+.button {
+    border-top: 1px solid #96d1f8;
+    background: #2f729e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a2c4db), to(#2f729e));
+    background: -webkit-linear-gradient(top, #a2c4db, #2f729e);
+    background: -moz-linear-gradient(top, #a2c4db, #2f729e);
+    background: -ms-linear-gradient(top, #a2c4db, #2f729e);
+    background: -o-linear-gradient(top, #a2c4db, #2f729e);
+    padding: 15px 30px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    }
+ .button:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+    }
+ .button:active {
+    border-top-color: #1d2a33;
+    background: #1d2a33;
+    }

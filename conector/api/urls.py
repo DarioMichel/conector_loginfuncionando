@@ -8,6 +8,6 @@ urlpatterns = [
     path('', welcome, name='welcome'),
     path('home/', home, name='home'),
     path('json/', BeliveoStatus.as_view(), name='jsonResponse'),
-    path('edicionhome/<nombre>', views.edicionhome), 
-    path('editarstatus/', views.editarstatus)
+    path('edicionhome/<nombre>', views.edicionhome, name="edicionhome"), 
+    path('editarstatus/', views.editarstatus, name='editarstatus')
 ]
